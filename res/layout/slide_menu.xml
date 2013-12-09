@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"   
+    >
+    
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/slide_menu_sel"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:gravity="center_vertical"
+    android:id="@+id/menu_snapshot"
+    >
+ 
+     <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_snapshot"
+         />
+    <TextView 
+            android:text="Daily News"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"           
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"/>
+     
+     <!--  <com.mcw.view.McwTextview
+		    xmlns:foo="http://schemas.android.com/apk/res/com.freerange360.mpp.NYDN"
+            android:text="Daily News"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"           
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            foo:customFont="fonts/Pakt.TTF"
+           /> -->
+      
+      
+      <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_arrow"
+         />
+  </LinearLayout>
+  
+ 
+ 
+ 
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/slide_menu_normal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:id="@+id/menu_cityguide"
+    >
+ 
+     <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_cityguide"
+         />
+
+     <TextView 
+            android:text="City Guide"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+     
+      <!--  <com.mcw.view.McwTextview
+		    xmlns:foo="http://schemas.android.com/apk/res/com.freerange360.mpp.NYDN"
+            android:text="City Guide"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            foo:customFont="fonts/Pakt.TTF"
+           /> -->
+      <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_arrow"
+         />
+  </LinearLayout>
+  
+ 
+ 
+ 
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/slide_menu_normal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:gravity="center_vertical"
+     android:clickable="true"
+     android:id="@+id/menu_trending"
+    >
+ 
+     <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_qr_reader"
+         />
+    <TextView 
+        	android:text="QR Reader"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+      <!--  <com.mcw.view.McwTextview
+		    xmlns:foo="http://schemas.android.com/apk/res/com.freerange360.mpp.NYDN"
+            android:text="QR Reader"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            foo:customFont="fonts/Pakt.TTF"
+           /> -->
+      <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_arrow"
+         />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/slide_menu_normal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:gravity="center_vertical"
+    android:visibility="gone"
+     android:clickable="true"
+     android:id="@+id/menu_me"
+    >
+ 
+     <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_me"
+         />
+    <TextView 
+       		android:text="My Stash"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="22sp"/>
+       <!-- <com.mcw.view.McwTextview
+		    xmlns:foo="http://schemas.android.com/apk/res/com.freerange360.mpp.NYDN"
+            android:text="My Stash"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            foo:customFont="fonts/Pakt.TTF"
+           /> -->
+      <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_arrow"
+         />
+  </LinearLayout>
+  
+  
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/slide_menu_normal"
+    android:paddingLeft="18dp"
+    android:paddingRight="20dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:gravity="center_vertical"
+     android:clickable="true"
+     android:id="@+id/menu_favorite"
+    >
+ 
+     <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/fav_icon"
+         />
+    <TextView 
+       		android:text="My Places"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+       <!-- <com.mcw.view.McwTextview
+		    xmlns:foo="http://schemas.android.com/apk/res/com.freerange360.mpp.NYDN"
+            android:text="My Places"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            foo:customFont="fonts/Pakt.TTF"
+           /> -->
+       <!-- 
+       Favorites
+        -->
+       
+      <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_arrow"
+         />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/slide_menu_normal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:gravity="center_vertical"
+     android:clickable="true"
+     android:id="@+id/menu_search"
+    >
+ 
+     <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_search_bar_search"
+         />
+ 			<TextView 
+    		android:text="City Guide Search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        <!-- <com.mcw.view.McwTextview
+		    xmlns:foo="http://schemas.android.com/apk/res/com.freerange360.mpp.NYDN"
+            android:text="City Guide Search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            foo:customFont="fonts/Pakt.TTF"
+           /> -->
+        
+      <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_arrow"
+         />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/slide_menu_normal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:id="@+id/menu_settings"
+    >
+ 
+     <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_icon_settings"
+         />
+    <TextView 
+      		android:text="About"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+      <!--  <com.mcw.view.McwTextview
+		    xmlns:foo="http://schemas.android.com/apk/res/com.freerange360.mpp.NYDN"
+            android:text="About"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            foo:customFont="fonts/Pakt.TTF"
+           /> -->
+       <ImageView 
+          android:layout_width="wrap_content"
+    	  android:layout_height="wrap_content"
+         android:background="@drawable/dash_arrow"
+         />
+  </LinearLayout>
+</LinearLayout>
+  <TextView android:layout_alignParentBottom="true"
+      android:paddingBottom="20dip"
+      android:paddingLeft="50dip"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Version 1.1.7"
+      android:textColor="#ffffff"
+      android:visibility="gone"
+      />
+  </RelativeLayout>

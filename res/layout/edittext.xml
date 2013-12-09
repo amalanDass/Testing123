@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/editText2"
+        android:imeOptions="actionSend|flagNoEnterAction" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/editText3"
+        android:imeOptions="actionSend|flagNoEnterAction" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_below="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/editText4"
+        android:imeOptions="actionSend|flagNoEnterAction" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_below="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:imeOptions="actionSend|flagNoEnterAction" />
+
+<!-- <include layout="@layout/bottomstrip" android:id="@+id/bottom" 
+    android:visibility="gone"
+    /> -->
+    <RelativeLayout  android:id="@+id/bottom" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    android:layout_alignParentBottom="true" >
+
+    <Button
+        android:id="@+id/pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prev." />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next" 
+        android:layout_toRightOf="@+id/pre"/>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_alignParentRight="true" />
+    
+</RelativeLayout>
+</RelativeLayout>

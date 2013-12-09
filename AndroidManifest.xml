@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sampleactionbar"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="preferExternal" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+<!-- permissions -->
+    <permission
+        android:name="com.example.sampleactionbar.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"></permission>
+    <uses-permission
+        android:name="com.example.sampleactionbar.permission.MAPS_RECEIVE"/>
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+		<uses-permission android:name="android.permission.INTERNET"/>
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+		<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+		<!-- The following two permissions are not required to use
+		     Google Maps Android API v2, but are recommended. -->
+		<!-- This is for finding the current lat and lon -->
+		<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+        <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+        <uses-permission android:name="android.permission.READ_CONTACTS"/>
+		<uses-permission android:name="android.permission.VIBRATE" />
+		<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+		<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+		<uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+		
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock"
+        android:name="com.example.sampleactionbar.MyApplication" >
+        
+		    <!-- import the library com.google.android.maps!!! -->
+		    <uses-library android:name="com.google.android.maps" />
+		     
+		     <meta-data
+		    android:name="com.google.android.maps.v2.API_KEY"
+		    android:value="AIzaSyBUPzrQhmxoGxmPCE9ISr88v6p5bLm49ZY"/><!-- AIzaSyB9APkgMGvE7llPj0Qt7baSOAbqdMKaq1U -->
+        
+        
+        <activity
+            android:name="com.example.sampleactionbar.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.example.sampleactionbar.Android_LifeCycle"></activity>
+        <activity android:name="com.example.sampleactionbar.MainActivity"></activity>
+        <activity android:name="com.example.sampleactionbar.SampleListClass"></activity>
+         <activity android:name="com.example.sampleactionbar.ResultActivity" ></activity>
+        <activity android:name="com.example.sampleactionbar.MultiplsChoice_Listview" ></activity>
+        <activity android:name="com.example.sampleactionbar.NewviewActivity"></activity>
+        <activity android:name="com.example.sampleactionbar.MapVersionOne_ExtendsMapActivity"></activity>
+        <activity android:name="com.example.sampleactionbar.CameraPhoto"></activity>
+        <activity android:name="com.example.sampleactionbar.Preference"></activity>
+        <activity android:name="com.example.sampleactionbar.EditTExt" ></activity>
+        <activity android:name="com.example.sampleactionbar.AnimationClass" ></activity>
+        <activity android:name="com.example.sampleactionbar.SurfaceViewExample" ></activity>
+        <activity android:name="com.example.sampleactionbar.SoundStuff" ></activity>       
+        <activity android:name="com.example.sampleactionbar.SlidingDrawar" ></activity>
+        <activity android:name="com.example.sampleactionbar.Tab" ></activity>
+        <activity android:name="com.example.sampleactionbar.SimpleBrowser" ></activity>
+        <activity android:name="com.example.sampleactionbar.ViewFlipper_Sample" ></activity>
+        <activity android:name="com.example.sampleactionbar.SharedPreferencesClass" ></activity>
+        <activity android:name="com.example.sampleactionbar.StoreIntenalClass" ></activity>
+        <activity android:name="com.example.sampleactionbar.VideoViewr" ></activity>
+        <activity android:name="com.example.sampleactionbar.MediaPlaybackActivity" ></activity>
+        <activity android:name="com.example.sampleactionbar.ExternalStorageClass_Spinner" ></activity>
+        <activity android:name="com.example.sampleactionbar.DBSqlite_Url" ></activity>
+        <activity android:name="com.example.sampleactionbar.SQLSample" ></activity>
+        <activity android:name="com.example.sampleactionbar.MapVersionTwo_FragmentMapActivity" ></activity>
+        <activity android:name="com.example.sampleactionbar.Motion_touch_event" ></activity>
+        <activity android:name="com.example.sampleactionbar.Location_Manager" ></activity>
+        <activity android:name="com.example.sampleactionbar.GetWholeContent" ></activity>
+        <activity android:name="com.example.sampleactionbar.ContentProviderSample" ></activity>
+        <activity android:name="com.example.sampleactionbar.BroadCastReceiverSample" ></activity>
+        <activity android:name="com.example.sampleactionbar.LocalBroadcastManagerSample" ></activity>
+        <activity android:name="com.example.sampleactionbar.Thread_ProgressTestActivity" ></activity>
+        <activity android:name="com.example.sampleactionbar.Handler_Sample" ></activity>
+        <activity android:name="com.example.sampleactionbar.Application_Sample" ></activity>
+        <activity android:name="com.example.sampleactionbar.Services_Sample_IntentServiceEx" ></activity>
+        <activity android:name="com.example.sampleactionbar.Services_consume_local" ></activity>
+       
+        
+        <service
+        android:name="com.example.sampleactionbar.LocalWordService"
+        android:icon="@drawable/ic_launcher"
+        android:label="LocalWordService" >
+        </service>
+        <receiver android:name="com.example.sampleactionbar.MyScheduleReceiver" >
+          <intent-filter>
+              <action android:name="android.intent.action.BOOT_COMPLETED" />
+          </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.sampleactionbar.MyStartServiceReceiver" >
+        </receiver>
+        
+         <service android:name="com.example.sampleactionbar.DownloadService" >
+         </service>
+        
+         <receiver android:name="com.example.sampleactionbar.MyBroadcastReceiver" >
+         </receiver>
+        
+        <receiver android:name="com.example.sampleactionbar.WidgetClass">  <!-- This for showing the widget -->
+            
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+            </intent-filter>
+    	 <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_stuff"></meta-data>
+        </receiver>
+       		 <activity android:name="com.example.sampleactionbar.Widget_Stuff" > <!--if we click the widget what we do-->
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+            </activity>
+            
+       		 
+       		 
+        <activity android:name="com.example.sampleactionbar.Fragments_SampleStrats" ></activity>
+        <activity android:name="com.example.sampleactionbar.Fragments_Main" ></activity>
+         <activity android:name="com.example.sampleactionbar.FragmentSecondMain" ></activity>
+      <!--  For Dashboard  -->
+        <activity android:name="com.example.sampleactionbar.DashboardActivity" ></activity>
+        
+        <activity android:name="com.example.sampleactionbar.MainActivity_ForGetPost" ></activity>
+        <activity android:name="com.example.sampleactionbar.JsonParserPostSample" ></activity>
+        <activity android:name="com.example.sampleactionbar.JsonParserSample" ></activity>
+        
+
+</application>
+
+</manifest>

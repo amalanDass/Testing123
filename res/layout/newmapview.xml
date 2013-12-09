@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ImageView
+    android:layout_height="wrap_content"
+    android:id="@+id/headimg"
+  android:layout_width="fill_parent"/>
+  <TextView
+            android:id="@+id/listheader"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		   
+		
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+		   android:layout_marginTop="10dip"
+			android:layout_centerHorizontal="true"
+			
+			android:text="Map" android:textSize="18sp"/>
+  
+ 	<ImageButton
+ 		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:id="@+id/home" 
+		android:layout_margin="7dip"/>
+	
+	<!--<com.google.android.maps.MapView android:id="@+id/map"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:apiKey="0XhEih6F-nS5hWUIelNZVHG40MCLH3yWurR2IIQ" 
+		android:clickable="true" />
+		
+		
+		
+		
+		
+-->
+
+<RelativeLayout
+android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/headimg">
+
+
+<com.google.android.maps.MapView android:id="@+id/map"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:apiKey="@string/mapkey"
+		android:clickable="true" />
+
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

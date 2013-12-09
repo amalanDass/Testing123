@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/icon_ac_refresh"
+        android:onClick="refresh"
+        android:showAsAction="always"
+        android:title="Refresh"/>
+    
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/icon_ac_search"
+        android:onClick="search"
+        android:showAsAction="ifRoom"
+        android:title="Search"/>
+    <item
+        android:id="@+id/action_location"
+        android:icon="@drawable/icon_ac_location"
+        android:onClick="location"
+        android:showAsAction="ifRoom"
+        />
+    
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/icon_ac_notifications"
+        android:onClick="notifications"
+        android:showAsAction="ifRoom"
+        android:title="Notifications"/>
+    
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/icon_ic_settings"
+        android:onClick="settings"
+        android:showAsAction="ifRoom"
+        android:title="Settings"/>
+    
+    
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/icon_ic_help"
+        android:onClick="help"
+        android:showAsAction="ifRoom"
+        android:title="Help"/>
+    
+    <item
+        android:id="@+id/animationsurface"
+        android:icon="@drawable/icon_ic_help"
+        android:onClick="animationsurface"
+        android:showAsAction="ifRoom"
+        android:title="Animation"/>
+
+</menu>

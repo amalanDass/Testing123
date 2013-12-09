@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="100">
+    <LinearLayout
+        android:id="@+id/lin_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_weight="50" 
+        android:orientation="horizontal">
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_right"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="50"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+    </LinearLayout>
+    
+</TableRow>

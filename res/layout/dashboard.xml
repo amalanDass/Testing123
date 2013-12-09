@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+    
+    <LinearLayout
+        android:id="@+id/rel_top"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        >
+			<Button
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="Slide"
+            android:textSize="10dip" 
+            android:textColor="#000000"/>
+    </LinearLayout>
+			<RelativeLayout
+            android:id="@+id/rel_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+
+            <RelativeLayout
+                android:id="@+id/rel_img_news"
+                android:layout_width="wrap_content"
+                android:layout_height="120dip"
+                android:layout_margin="5dp" >
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/table_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel_img_news" >
+            </TableLayout>
+        </RelativeLayout>
+    
+</LinearLayout>

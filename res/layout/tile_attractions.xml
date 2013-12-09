@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_weather"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/imagebased_widget_overlay" >
+    <ImageView 
+        android:id="@+id/img_dining"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        />
+    
+   
+     <LinearLayout
+        android:id="@+id/side"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/widgettitle_box"
+         android:gravity="left|center_vertical"
+        android:padding="4dp" >
+
+        <TextView
+            android:padding="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATTRACTIONS"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+             android:id="@+id/title_widget"
+             />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/widget_title_bg"
+
+        android:text="Title Here"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
